@@ -36,13 +36,12 @@ function DoSaveTask() {
             },
             dataType: 'json'
         }).done(function (data) {
-            if (data = 1) {
-                alert('Выполнено успешно!');
+            if (data = '1') {
                 document.location.href = "/main/index";
             }
-            else {
-                alert('Ошибка сохранения')
-            }
+            if (data = '222') {  {
+                 document.location.href = "/user/signin";
+            }}
             console.log(data);
         });
     }
